@@ -37,8 +37,8 @@ Limitations
 Motivation
 ----------
 
-[`sudo`](https://www.sudo.ws/) is a notoriously hazardous to system
-security, like
+[`sudo`](https://www.sudo.ws/) is notoriously hazardous to system
+security, regularily having security issues like
 e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit)
 and I wanted to get rid of it once and forever.
 
