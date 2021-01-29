@@ -12,4 +12,4 @@ for p in "$@"; do
     cmd="$cmd '$p'"
 done
 
-exec ssh root@localhost "cd `pwd`; $cmd"
+exec ssh root@localhost -t "cd `pwd`; $cmd"
