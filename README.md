@@ -32,6 +32,7 @@ Limitations
 * Won't work properly if parameters contain one or more single quotes.
 * Might make your brain hurt if you try to use backslash escaping.
 * No SSH option passing. Use `~/.ssh/config` for that.
+* Only works for gaining root privileges.
 
 Motivation
 ----------
