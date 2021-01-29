@@ -39,11 +39,11 @@ Motivation
 
 [`sudo`](https://www.sudo.ws/) is notoriously hazardous to system
 security, regularily having security issues like
-e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit)
-and I wanted to get rid of it once and forever.
+e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit).
 
-Didn't seem that hard as I use `ssh root@localhost` anyway for most
-purposes other people would think to use `sudo` for.
+So I wanted to get rid of it once and forever. Didn't seem that hard
+as I use `ssh root@localhost` anyway for most purposes other people
+would think about using `sudo` for.
 
 But unfortunately using `pdebuild` from the [pbuilder
 suite](https://pbuilder-team.pages.debian.net/pbuilder/) with
