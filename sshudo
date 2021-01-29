@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Author: Axel Beckert <abe@deuxchevaux.org>
+# License:
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+#
+# 0. You just DO WHAT THE FUCK YOU WANT TO.
+
+cmd=''
+for p in "$@"; do
+    cmd="$cmd '$p'"
+done
+
+exec ssh root@localhost "cd `pwd`; $cmd"
