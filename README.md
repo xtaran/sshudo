@@ -5,9 +5,7 @@ Synopsis
 --------
 
 ```sh
-sshudo pbuilder --build --debbuildopts "" ../somedebianpackage_123-4.dsc
-
-PBUILDERROOTCMD=sshudo
+PBUILDERROOTCMD=sshudo pbuilder --build --debbuildopts "" ../somedebianpackage_123-4.dsc
 
 alias sudo=sshudo
 alias pkexec=sshudo
