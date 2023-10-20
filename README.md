@@ -10,16 +10,18 @@ sshudo pbuilder --build --debbuildopts "" ../somedebianpackage_123-4.dsc
 PBUILDERROOTCMD=sshudo
 
 alias sudo=sshudo
+alias pkexec=sshudo
 
 sshudo ln -vis sshudo /usr/bin/sudo
+sshudo ln -vis sshudo /usr/bin/pkexec
 ```
 
 Description
 -----------
 
 sshudo is an SSH based minimal drop-in replacement for very basic
-`sudo` usage with commands which still contain parameters with spaces
-or empty parameters.
+`sudo` and `pkexec` usage with commands which still contain parameters
+with spaces or empty parameters.
 
 Options
 -------
@@ -40,6 +42,7 @@ Motivation
 [`sudo`](https://www.sudo.ws/) is notoriously hazardous to system
 security, regularily having security issues like
 e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit).
+(And PolicyKit and its `pkexec` isn't much better either.)
 
 So I wanted to get rid of it once and forever. Didn't seem that hard
 as I use `ssh root@localhost` anyway for most purposes other people
