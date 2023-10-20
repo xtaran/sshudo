@@ -1,0 +1,2 @@
+usr/bin/sshudo usr/bin/sudo
+usr/bin/sshudo usr/bin/pkexec

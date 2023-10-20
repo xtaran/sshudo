@@ -1,0 +1,22 @@
+Source: sshudo
+Section: admin
+Priority: optional
+Maintainer: Axel Beckert <abe@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/xtaran/sshudo
+Vcs-Browser: https://github.com/xtaran/sshudo
+Vcs-Git: https://github.com/xtaran/sshudo.git
+Rules-Requires-Root: no
+
+Package: sshudo
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: pkexec,
+           sudo
+Provides: pkexec,
+          sudo
+Description: sudo/pkexec drop-in replacement using ssh root@localhost
+ sshudo is an SSH based minimal drop-in replacement for very basic
+ sudo or pkexec usage with commands which still contain parameters
+ with spaces or empty parameters.

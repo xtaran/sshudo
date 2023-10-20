@@ -1,0 +1,11 @@
+sshudo (1.0.1-1) UNRELEASED; urgency=medium
+
+  * New release.
+
+ -- Axel Beckert <abe@debian.org>  Fri, 20 Oct 2023 15:56:59 +0200
+
+sshudo (1.0.0-1) UNRELEASED; urgency=medium
+
+  * Initial release
+
+ -- Axel Beckert <abe@debian.org>  Fri, 29 Jan 2021 04:33:11 +0100

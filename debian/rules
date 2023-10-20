@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+get-orig-source:
+	d=$$(basename $$(pwd)); cd ../ ; tar cvJf sshudo_$$(head -1 $$d/debian/changelog | awk -F'[-()]' '{print $$2}').orig.tar.xz --exclude=debian --exclude=.git --exclude=\*~ $$d/
