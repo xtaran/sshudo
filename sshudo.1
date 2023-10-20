@@ -1,0 +1,53 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" (C) Copyright 2021 Axel Beckert <abe@debian.org>,
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH sshudo 1 "29th of January 2021"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+sshudo \- minimal sudo and pkexec drop-in replacement using ssh root@localhost
+.SH SYNOPSIS
+.B sshudo
+.RI command [ parameters ]
+.SH DESCRIPTION
+\fBsshudo\fP is an SSH based minimal drop-in replacement for very
+basic \fBsudo\fP and \fBpkexec\fP usage with commands which still
+contain parameters with spaces or empty parameters.
+.SH LIMITATIONS
+* Won't work properly if parameters contain one or more single quotes.
+.br
+* Might make your brain hurt if you try to use backslash escaping.
+.br
+* No SSH option passing. Use ~/.ssh/config for that.
+.br
+* Only works for gaining root privileges.
+.SH OPTIONS
+None so far.
+.SH EXAMPLES
+$ PBUILDERROOTCMD=sshudo pbuilder --build --debbuildopts "" ../somedebianpackage_123-4.dsc
+.br
+$ alias sudo=sshudo
+.br
+$ alias pkexec=sshudo
+.br
+$ sshudo ln -vis sshudo /usr/bin/sudo
+.br
+$ sshudo ln -vis sshudo /usr/bin/pkexec
+.SH SEE ALSO
+.BR sudo (8),
+.BR pkexec (1).
+.br
+🤪

@@ -1,2 +1,4 @@
 usr/bin/sshudo usr/bin/sudo
 usr/bin/sshudo usr/bin/pkexec
+usr/share/man/man1/sshudo.1.gz usr/share/man/man1/sudo.1.gz
+usr/share/man/man1/sshudo.1.gz usr/share/man/man8/pkexec.8.gz
