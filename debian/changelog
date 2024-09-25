@@ -2,7 +2,7 @@ sshudo (1.0.1-1) UNRELEASED; urgency=medium
 
   * New release.
 
- -- Axel Beckert <abe@debian.org>  Fri, 20 Oct 2023 15:56:59 +0200
+ -- Axel Beckert <abe@debian.org>  Wed, 25 Sep 2024 16:56:04 +0200
 
 sshudo (1.0.0-1) UNRELEASED; urgency=medium
 

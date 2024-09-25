@@ -14,6 +14,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Also suggest using it as drop-in replacement for the similarly
   notorious `pkexec`.
 * Add debian packaging.
+* Parse options -u and --user.
 
 1.0.0 - 2021-01-29
 ------------------

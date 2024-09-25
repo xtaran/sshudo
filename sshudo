@@ -8,8 +8,16 @@
 # 0. You just DO WHAT THE FUCK YOU WANT TO.
 
 cmd=''
+user=root
+
+if [ "$1" = "--user" -o "$1" = "-u" ]; then
+    shift
+    user="$1"
+    shift
+fi
+
 for p in "$@"; do
     cmd="$cmd '$p'"
 done
 
-exec ssh root@localhost -t "cd `pwd`; $cmd"
+exec ssh "$user"@localhost -t "cd `pwd`; $cmd"
