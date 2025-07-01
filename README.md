@@ -39,7 +39,10 @@ Motivation
 
 [`sudo`](https://www.sudo.ws/) is notoriously hazardous to system
 security, regularily having security issues like
-e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit).
+e.g. [CVE-2021-3156](https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit),
+[CVE-2025-32462](https://www.stratascale.com/vulnerability-alert-CVE-2025-32462-sudo-host)
+or
+[CVE-2025-32463](https://www.stratascale.com/vulnerability-alert-CVE-2025-32463-sudo-chroot).
 (And PolicyKit and its `pkexec` isn't much better either.)
 
 So I wanted to get rid of it once and forever. Didn't seem that hard
